@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Deepika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2>Get In <span>Touch</span></h2>
+            <p style="color: var(--text-muted);">Have a question or want to work together? Feel free to reach out!</p>
+            <div style="margin-top: 1rem;">
+                <a href="mailto:contact@example.com" style="color: var(--accent); font-size: 1.2rem; text-decoration: none;">contact@example.com</a>
+            </div>
+        </div>
+        
+        <div class="glass-card contact-form">
+            <h3 style="margin-bottom: 1rem;">Send a Message</h3>
+            <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                    <div style="flex: 1; min-width: 200px;">
+                        <input type="text" placeholder="Your Name" required style="width: 100%; margin-bottom: 1rem;">
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <input type="email" placeholder="Your Email" required style="width: 100%; margin-bottom: 1rem;">
+                    </div>
+                </div>
+                <input type="text" placeholder="Subject" style="margin-bottom: 1rem;">
+                <textarea placeholder="Your Message" required style="margin-bottom: 1rem;"></textarea>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </main>
+    <script src="components.js"></script>
+</body>
+</html>
